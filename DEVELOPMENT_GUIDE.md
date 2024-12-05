@@ -30,20 +30,6 @@ Today we are only using this for the main jockey server (still a big advantage) 
 
 The use of compose at this level is also possible but for our use case we wanted to keep things separate until we can contribute the new compose configuration back to the Jockey project. Additionally, things get quite a bit more challenging when we want to compose from the root level but spin up multiple indepdently declared sub projects. Possible, but also seemingly defeats the purpose of custom apps. We think there are more options here but they will need to be explored more.
 
-### Twelve Labs "Jockey" service [code/jockey-server]
-
-![Jockey Overview](assets/highlevel_jockey.jpeg)
-
-![Jockey Architecture](assets/jockey_architecture.jpg)
-
- - Powers the core video processing functionality
- - Contains LangGraph Engine for workflow management
- - Maintains worker pool for task execution
- - Provides specialized tools for:
-  - Video search capabilities
-  - Video editing functions
-  - Text generation features
-
 ### Demo UI Application [code/demo-jockey-ui]
 
 ![Front End Overview](assets/highlevel_frontend.jpeg)
@@ -64,6 +50,20 @@ Backend Services maintain connections with external services
  - Manages configuration and state
 
 `code/demo-jockey-ui` has a fully functional and extensible  app that you can use to create your own brand new video from your existing content. This demo is primarily in place to showcase how to leverage the use of an agentic server like this, but it is starting point that you can use to include additional services.
+
+### Twelve Labs "Jockey" service [code/jockey-server]
+
+![Jockey Overview](assets/highlevel_jockey.jpeg)
+
+![Jockey Architecture](assets/jockey_architecture.jpg)
+
+ - Powers the core video processing functionality
+ - Contains LangGraph Engine for workflow management
+ - Maintains worker pool for task execution
+ - Provides specialized tools for:
+  - Video search capabilities
+  - Video editing functions
+  - Text generation features
 
 ## Communication Patterns
 
