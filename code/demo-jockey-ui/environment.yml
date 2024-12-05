@@ -1,0 +1,39 @@
+name: jockey-ui
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - fastapi=0.115.5
+  - uvicorn-standard=0.27.0
+  - python-dotenv=1.0.0
+  - pydantic>=2.6.3
+  - pydantic-settings=2.1.0
+  - websockets=12.0
+  - numpy=1.26.3
+  - pytest>=8.0.0
+  - pytest-asyncio>=0.23.0
+  - pytest-mock>=3.12.0
+  - pytest-cov>=4.1.0
+  - httpx>=0.26.0
+  - black>=24.1.0
+  - isort>=5.13.0
+  - mypy>=1.8.0
+  - ruff>=0.2.0
+  - nodejs>=20.0.0 
+  - portaudio
+  - conda-lock
+  - aiohttp
+  - pip:
+    - weave
+    - loguru
+    - "langgraph>=0.2.32,<0.3.0"
+    - sse-starlette
+    - itsdangerous
+    - pyaudio==0.2.14
+    - transitions
+
+variables:
+  PYTHONPATH: ${CONDA_PREFIX}/lib/python3.11/site-packages
+  PYTHONIOENCODING: utf-8

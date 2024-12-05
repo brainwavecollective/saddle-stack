@@ -1,0 +1,72 @@
+services:
+  langgraph-api:
+    user: "49896:49896"
+    depends_on:
+      langgraph-postgres:
+        condition: service_healthy
+      langgraph-redis:
+        condition: service_healthy
+      static-server:
+        condition: service_started
+    networks:
+      - jockey_internal  
+      - default         
+    ports:
+      - "8123:8000"
+    volumes:
+      # TBD: change this to public, and also add handling to not expose vids ${HOST_PUBLIC_DIR}:/var/www/jockey/public & private w/related security
+      - ${HOST_PUBLIC_DIR}:${HOST_PUBLIC_DIR}:rw
+      - ${HOST_VECTOR_DB_DIR}:/var/lib/jockey/vector_db
+    environment:
+      LANGGRAPH_API_URL: "http://langgraph-api:8000" 
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY}
+      TWELVE_LABS_API_KEY: ${TWELVE_LABS_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      HOST_PUBLIC_DIR: ${HOST_PUBLIC_DIR}
+      HOST_VECTOR_DB_DIR: ${HOST_VECTOR_DB_DIR}
+      LLM_PROVIDER: ${LLM_PROVIDER}
+      AZURE_OPENAI_ENDPOINT: NOT-YET-SUPPORTED
+      AZURE_OPENAI_API_VERSION: NOT-YET-SUPPORTED
+
+  langgraph-postgres:
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - jockey_internal
+    expose:
+      - "5432"  
+
+  langgraph-redis:
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - jockey_internal
+    expose:
+      - "6379" 
+   
+  static-server:
+    user: "49896:49896"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.config:ro
+      - ${HOST_PUBLIC_DIR}:/usr/share/nginx/html:ro
+    image: nginxinc/nginx-unprivileged:alpine
+    ports:
+      - "8124:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      
+networks:
+  jockey_internal:
+    driver: bridge
+    internal: true  
+  default:             
+    driver: bridge 

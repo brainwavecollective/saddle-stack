@@ -1,0 +1,110 @@
+# Ignore generated or temporary files managed by the Workbench
+.project/*
+!.project/spec.yaml
+!.project/configpacks
+
+# General ignores
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temp directories, and notebooks created by jupyterlab
+.ipynb_checkpoints
+.Trash-*/
+.jupyter/
+.local/
+
+# Lock files
+#*.lock - remove for distribution but use for dev
+
+# Python distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Workbench Project Layout
+data/scratch/*
+!data/scratch/.gitkeep
+
+# Project Specific Files
+my_public_key.pub
+
+# Jockey Specific (not sorted)
+*venv
+*.mp4
+*.mp3
+!code/demo-jockey-ui/app/static/assets/audio/bg1.mp3
+!code/demo-jockey-ui/app/static/assets/audio/bg2.mp3
+!code/demo-jockey-ui/app/static/assets/audio/bg3.mp3
+*.vscode
+*.DS_Store
+*/__pycache__
+*.pyc
+*.langgraph-data
+*.ipynb_checkpoints
+jockey/dist
+jockey/build
+*.egg-info
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log*
+.vercel
+jockey-server.pid 
+
+# Temp directories, notebooks created by jupyterlab

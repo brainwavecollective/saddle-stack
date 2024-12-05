@@ -1,0 +1,12 @@
+{
+    "graphs": {
+        "jockey": "jockey.app:jockey"
+    },
+    "env": ".env",
+    "dependencies": ["."],
+    "dockerfile_lines": [
+        "RUN apt-get update && apt-get install -y ffmpeg wget xz-utils",
+        "RUN groupadd -g 49896 nvwb && useradd -u 49896 -g nvwb -m nvwb"
+    ]
+}
+

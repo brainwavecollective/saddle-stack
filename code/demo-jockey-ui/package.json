@@ -1,0 +1,39 @@
+{
+  "name": "jockey-demo-ui",
+  "version": "1.0.0",
+  "description": "A simple front end example for TwelveLabs Jockey created by the Brain Wave Collective.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf app/static/dist/*",
+    "debug-build": "vite build --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainwavecollective/nvwb-tl-jockey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brainwavecollective/nvwb-tl-jockey/issues"
+  },
+  "homepage": "https://github.com/brainwavecollective/nvwb-tl-jockey#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.10"
+  }
+}
