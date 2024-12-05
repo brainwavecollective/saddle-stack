@@ -70,11 +70,6 @@ This is necessary for tracing your server activity. Navigate to [Langsmith](http
 
 Once your account is created, select "Settings" and then "API Keys" to create a new API key.  The URL will look like `https://smith.langchain.com/o/<your-uid>/settings`
 
-### Weave Account with an API Key (only needed for UI, free, optional)
-This optional and only necessary if you are running our example UI app.  
-
-Although the Jockey server provides observability through Langsmith, our React App captures traces through Weave. If you would like to log and monitor these events you will need to [create a Weights & Biases (W&B) account](https://wandb.ai) and [copy your API key](https://wandb.ai/authorize).
-
 ### GitHub PAT 
 This process will require that you have a GitHub Personal Access Token in place on your GitHub account. We recommend a classic token w/repo scope.
 
