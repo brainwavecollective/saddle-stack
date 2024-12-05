@@ -178,9 +178,7 @@ To stop, scroll down to 'jockey-server' in the Environment > Apps section and to
 Note that we have an open issue to explore why the startup command fails before the timeout. Due to this, you may not be able to stop the composed stack through the UI. Instead ssh to the instance and: `docker compose down jockey-server` or `docker stop jockey-server-langgraph-api-1 jockey-server-langgraph-postgres-1 jockey-server-langgraph-redis-1 jockey-server-static-server-1`. You can also access the instance through the terminal provided in JupyterLab (just toggle the app and a local browswer will open for you).
 
 ### STEP 3 - Go have fun!
-Yes it's that easy. Now that you're up and running, it's time to explore the Jockey agentic video framework. You can do that with our demo app or build your own.  Here are the components of the Jockey Server:  
-
-![Jockey Architecture](assets/jockey_architecture.jpg)
+Yes it's that easy. Now that you're up and running, it's time to explore the Jockey agentic video framework. You can do that with our demo app or build your own.
 
 ## Explore the Jockey Service through our sample application 
 Although this project exists primarily to showcase how easy it would be to spin up a production level service that could support heavy duty workloads on a remote instance, we know it is more interesting to see how this type of thing can work with an application that you can actually access.  
