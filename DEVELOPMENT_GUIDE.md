@@ -53,7 +53,7 @@ Frontend is Primary interface for user interactions
  - Communicates with backend via WebSocket controls
  - Receives display updates through Server-Sent Events (SSE)
 
-![Back End Overview](assets/highlevel_frontend.jpeg)
+![Back End Overview](assets/highlevel_backend.jpeg)
 
 Backend Services maintain connections with external services
  - Bi-directional API or WebSocket communication options
