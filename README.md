@@ -13,7 +13,7 @@ We expect that you will take your time to understand what is involved, and setti
 
 However, this project isn't really about generating new videos, it's about giving you a starting point for working with heavyweight hardware and modern approaches to applications, deployments, and managing AI/ML workloads. We hope this project will be a transition point for your introduction to the space, and can serve as a jumping off point for you to explore related aspects.  
 
-***This project was inspired by "Jockbench" the [Brain Wave Collective](https://brainwavecollective.ai)'s winning submission to [NVIDIA's HackAI Challenge](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/). Contact [Daniel](mailto:daniel@brainwavecollective.ai) for any needs***
+***This project was inspired by "Saddle Stack (AKA Jockbench)" the [Brain Wave Collective](https://brainwavecollective.ai)'s winning submission to [NVIDIA's HackAI Challenge](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/). Contact [Daniel](mailto:daniel@brainwavecollective.ai) for any needs***
 
 ## Overview 
 This README will walk you through everything you need to get started.  Below is the general layout of this repository.  

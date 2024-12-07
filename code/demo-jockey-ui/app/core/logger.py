@@ -2,7 +2,7 @@
 Brain Wave Collective
 https://brainwavecollective.ai
   Revolutionizing Video Creation with TwelveLabs Jockey and NVIDIA AI Workbench. 
-  Jockbench is our submission to the Dell x NVIDIA HackAI Challenge
+  Saddle Stack (AKA Jockbench) is our submission to the Dell x NVIDIA HackAI Challenge
 File: logger.py
 Created: 2024
 Authors: Thienthanh Trinh & Daniel Ritchie
