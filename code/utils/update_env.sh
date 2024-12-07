@@ -1,6 +1,6 @@
 ###########################################
 #
-#  Brain Wave Collective
+#  Brain Wave Collective 
 #  https://brainwavecollective.ai
 # 
 #    Revolutionizing Video Creation with TwelveLabs Jockey and NVIDIA AI Workbench.
