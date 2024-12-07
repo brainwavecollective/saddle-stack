@@ -118,7 +118,7 @@ const useAudioPlayer = () => {
         
         const originalVolume = musicRef.current.volume;
         const startTime = Date.now();
-        const fadeInterval = 50;
+        const fadeInterval = 225;
         
         const fadeStep = () => {
           const elapsedTime = (Date.now() - startTime) / 1000;

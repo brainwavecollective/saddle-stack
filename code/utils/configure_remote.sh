@@ -230,7 +230,7 @@ SSH Keyfile: ~/.ssh/$WORKBENCH_KEY_NAME
 Workbench Directory: (use default)
 
 ... and then create a cloning this repo to create the project: 
-https://github.com/brainwavecollective/nvwb-tl-jockey.git
+https://github.com/brainwavecollective/saddle-stack.git
 "
 read -p "Press Enter after you have established a connection to your remote and cloned the repo..."
 
@@ -241,7 +241,7 @@ read -p "Press Enter after you have established a connection to your remote and 
 debug_info "Running final setup commands on the server..."
 ssh -i ${HOME}/.ssh/${WORKBENCH_KEY_NAME} nvwb@${SERVER_IP} \
   "export NVWB_BIN_PATH='/home/nvwb/.nvwb/bin/nvwb-cli' && \
-  export NVWB_PROJECT_PATH='/home/nvwb/nvidia-workbench/brainwavecollective-nvwb-tl-jockey' && \
+  export NVWB_PROJECT_PATH='/home/nvwb/nvidia-workbench/brainwavecollective-saddle-stack' && \
   sed -i 's/nvwb /\${NVWB_BIN_PATH} /g' \"\${NVWB_PROJECT_PATH}/code/utils/update_env.sh\" && \
   TWELVE_LABS_API_KEY='$TWELVE_LABS_API_KEY' \
   OPENAI_API_KEY='$OPENAI_API_KEY' \
