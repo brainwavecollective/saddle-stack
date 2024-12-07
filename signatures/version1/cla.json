@@ -1,3 +1,12 @@
 {
-   "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "brainwavecoder9",
+      "id": 135163437,
+      "comment_id": 2521638482,
+      "created_at": "2024-12-05T22:47:53Z",
+      "repoId": 899242422,
+      "pullRequestNo": 2
+    }
+  ]
 }
