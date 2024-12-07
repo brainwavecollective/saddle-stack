@@ -1,5 +1,5 @@
 #!/bin/bash
-# destroy_remote.sh - Script to remove NVWB components from a remote server
+# destroy_remote.sh - Script to remove NVWB components from a remote server 
 # Determine the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Check if .env file exists in the parent directory of the script location

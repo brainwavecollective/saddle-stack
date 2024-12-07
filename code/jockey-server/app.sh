@@ -1,7 +1,7 @@
 ###########################################
 #
 #  Brain Wave Collective
-#  https://brainwavecollective.ai
+#  https://brainwavecollective.ai 
 # 
 #    Revolutionizing Video Creation with TwelveLabs Jockey and NVIDIA AI Workbench.
 #	 Jockbench is our submission to the Dell x NVIDIA HackAI Challenge
