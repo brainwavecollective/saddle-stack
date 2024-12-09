@@ -1,5 +1,7 @@
 # Welcome to Saddle Stack!
 
+A unified development experience for exploring AI agents and curating your own video. Featuring [NVIDIA AI Workbench](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/), [TwelveLabs](https://www.twelvelabs.io/), and [Jockey](https://www.twelvelabs.io/blog/introducing-jockey) 
+
 ![Saddle Stack](assets/blucifer.png)
  
  The goal of this project is to provide you with a fast and easy way to get started in the world of modern AI app development. We massively simplfy some heavy lifing and we cover a lot of ground here: 
