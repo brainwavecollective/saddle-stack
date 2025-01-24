@@ -182,7 +182,7 @@ debug_info "Setting up the remote service via SSH..."
 ssh -i "${HOME}/.ssh/${SERVER_KEY_NAME}" "${SERVER_USER}@${SERVER_IP}" "
   GITHUB_USER='${GITHUB_USER}'
   GITHUB_PAT='${GITHUB_PAT}'
-  URL='https://raw.githubusercontent.com/brainwavecollective/nvwb-tl-jockey/main/code/utils/install.sh'
+  URL='https://raw.githubusercontent.com/brainwavecollective/saddle-stack/main/code/utils/install.sh'
   
   echo 'Debugging on the remote server...'
   
